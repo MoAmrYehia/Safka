@@ -5,6 +5,7 @@ import LandingPage from '../components/LandingPage'
 import Register from '../components/Register'
 import Login from '../components/Login'
 import Invite from '../components/Invite'
+import Chat from '../components/Chat'
 
 const Index = () => {
   return (
@@ -13,8 +14,9 @@ const Index = () => {
         {/* <LandingPage /> */}
         {/* <Register /> */}
         {/* <Login /> */}
+        {/* <Invite /> */}
 
-        <Invite />
+        <Chat />
       </>
     </Layout>
   )
