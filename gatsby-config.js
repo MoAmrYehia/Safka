@@ -68,13 +68,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
-    // `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -85,6 +78,27 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // icon: `content/assets/gatsby-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Space Mono',
+              variants: ['300', '400', '500', '700'],
+            },
+            {
+              family: 'Work Sans',
+              variants: ['300', '400', '500'],
+            },
+          ],
+        },
+        formats: ['woff2', 'woff'],
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: false,
       },
     },
     `gatsby-plugin-react-helmet`,

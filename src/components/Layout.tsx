@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-// import '../../static/styles/style.css'
+import '../../static/styles/styles.css'
 import Footer from './Footer'
 import Header from './Header'
 
