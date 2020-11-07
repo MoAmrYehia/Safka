@@ -1,12 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Layout from '../components/Layout'
 // import { Grid } from '@material-ui/core'
 import { GatsbyImage } from '../types/childImageSharp'
 import styled from 'styled-components'
 import { Button } from '@material-ui/core'
 import { Container } from '../components/Primitives'
+import TopLayout from '../../plugins/gatsby-plugin-top-layout/TopLayout';
 
 interface Props {
   data: {
@@ -18,7 +18,7 @@ const Index = ({ data }: Props) => {
   const { hero_image } = data
 
   return (
-    <Layout>
+    <TopLayout>
       <Container>
         <Image
           fluid={hero_image?.childImageSharp.fluid}
@@ -34,7 +34,7 @@ const Index = ({ data }: Props) => {
           </Button>
         </ButtonContainer>
       </Container>
-    </Layout>
+    </TopLayout>
   )
 }
 
