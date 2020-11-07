@@ -11,6 +11,7 @@
     "@material-ui/core": "latest",
     "@material-ui/lab": "latest",
     "@material-ui/styles": "latest",
+    "@types/react-helmet": "^6.1.0",
     "@types/styled-components": "^5.1.4",
     "axios": "^0.21.0",
     "gatsby": "^2.25.3",
