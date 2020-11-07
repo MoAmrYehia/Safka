@@ -8,7 +8,7 @@
   }'
  */
 export interface AitoRequest {
-  // table-name
+  /** table-name */
   from: string
   where: {[key: string]: number | string}
   predict?: string
