@@ -20,7 +20,6 @@ const RestaurantsList: FC<Props> = () => {
   useEffect(() => {
     getAndUpdateRestaurants({setRestaurants, filters})
   }, [filters])
-  console.log('pizzaImg:', pizzaImg)
   const restaurantImages = [
     pizzaImg,
     coffeeImg,
