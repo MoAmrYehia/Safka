@@ -1,10 +1,4 @@
 /** update based on aito naming */
-export interface Restaurant {
-  name: string
-  city: string
-  rating?: number
-  openingHours?: string
-}
 
 export interface RestaurantMain {
   Rambience: string,
