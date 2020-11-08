@@ -2,7 +2,7 @@
   "name": "safka",
   "private": true,
   "description": "An application for Junction 2020 Connected, AITO.AI challenge",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "latest",
