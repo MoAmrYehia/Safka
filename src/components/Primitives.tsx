@@ -24,4 +24,5 @@ export const devices = {
 export const Container = styled.div`
   max-width: ${size.mobileL};
   margin: auto;
+  margin-top: 25vh;
 `

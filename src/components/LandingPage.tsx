@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, navigate, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from './Layout'
 import styled from 'styled-components'
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
   return (
     <Layout>
-      <Container style={{ marginTop: '35vh'}}>
+      <Container style={{ marginTop: '35vh' }}>
         <Image
           fluid={hero_image?.childImageSharp.fluid}
           style={{ width: '200px' }}
@@ -36,8 +36,9 @@ const LandingPage = () => {
 
         <ButtonContainer>
         <Grid container justify='center'>
-          <GreenButton>Let's eat!</GreenButton>
-          <WhiteButton>Enter Code</WhiteButton>
+          <GreenButton onClick={() => navigate('/restaurants')}>Let's eat!</GreenButton>
+          {/* later separate "enter code" handling */}
+          <WhiteButton onClick={() => navigate('/restaurants')}>Enter Code</WhiteButton>
         </Grid>
 
           <GreyMessage>

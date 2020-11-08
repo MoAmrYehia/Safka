@@ -1,5 +1,7 @@
+import { Button, Grid } from '@material-ui/core'
 import React from 'react'
 import styled from 'styled-components'
+import CustomMuiLink from '../../plugins/gatsby-plugin-top-layout/CustomMuiLink'
 import { Container } from '../components/Primitives'
 import {
   GreyMessage,
@@ -19,7 +21,7 @@ const Register = () => {
     },
   ]
   return (
-    <Container>
+    <Container style={{ marginTop: '5vh'}}>
       <h1>Register</h1>
 
       <GreyMessage>Create your profile!</GreyMessage>
@@ -34,10 +36,14 @@ const Register = () => {
           )
         })}
       </Form>
-
-      <GreenButton>Create Account</GreenButton>
+      <Grid container justify='center'>
+        <GreenButton>Create Account</GreenButton>
+      </Grid>
       <GreyMessage>
-        Already have a profile? <a href="/">Sign in</a>
+        Already have a profile?
+          <Button color='secondary' component={CustomMuiLink} to="/login">
+              Sign in
+          </Button>
       </GreyMessage>
     </Container>
   )
