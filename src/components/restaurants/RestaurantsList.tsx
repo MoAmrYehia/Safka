@@ -12,7 +12,7 @@ interface Props {
 }
 
 
-const Restaurants: FC<Props> = () => {
+const RestaurantsList: FC<Props> = () => {
   
   const [restaurants, setRestaurants] = useState<RestaurantMain[]>([])
   // use set filters in other components
@@ -44,4 +44,4 @@ const Restaurants: FC<Props> = () => {
   )
 }
 
-export default Restaurants
+export default RestaurantsList

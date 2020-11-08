@@ -18,7 +18,7 @@
       "es2017"
     ]
   },
-  "include": ["src", "static"],
+  "include": ["plugins", "src", "static"],
   "exclude": [
     "node_modules"
   ]

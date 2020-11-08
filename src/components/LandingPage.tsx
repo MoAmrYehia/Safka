@@ -9,6 +9,8 @@ import {
   WhiteButton,
   GreyMessage,
 } from '../components/StyledComponents'
+import CustomMuiLink from '../../plugins/gatsby-plugin-top-layout/CustomMuiLink'
+import { Button, Grid } from '@material-ui/core'
 
 const LandingPage = () => {
   const data = useStaticQuery(graphql`
@@ -26,18 +28,23 @@ const LandingPage = () => {
 
   return (
     <Layout>
-      <Container>
+      <Container style={{ marginTop: '35vh'}}>
         <Image
           fluid={hero_image?.childImageSharp.fluid}
           style={{ width: '200px' }}
         />
 
         <ButtonContainer>
+        <Grid container justify='center'>
           <GreenButton>Let's eat!</GreenButton>
           <WhiteButton>Enter Code</WhiteButton>
+        </Grid>
 
           <GreyMessage>
-            Already have a profile? <a href="/">Sign in</a>
+            Already have a profile? 
+            <Button color='secondary' component={CustomMuiLink} to="/login">
+              Sign in
+            </Button>
           </GreyMessage>
         </ButtonContainer>
       </Container>

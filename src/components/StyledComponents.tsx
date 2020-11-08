@@ -8,7 +8,9 @@ export const GreenButton = styled.button`
   border: none;
   margin-bottom: 15px;
   width: 100%;
+  max-width: 80vw;
   font-size: 16px;
+
 `
 
 export const WhiteButton = styled.button`
@@ -17,6 +19,8 @@ export const WhiteButton = styled.button`
   color: var(--green);
   padding: var(--padding);
   border-radius: 24px;
+  width: 100%;
+  max-width: 80vw;
   margin-bottom: 15px;
 `
 export const GreyMessage = styled.p`
