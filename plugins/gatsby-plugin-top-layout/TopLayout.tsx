@@ -18,7 +18,7 @@ const TopLayout = (props: any) =>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        {props.children}
+          {props.children}
       </ThemeProvider>
     </React.Fragment>
   )

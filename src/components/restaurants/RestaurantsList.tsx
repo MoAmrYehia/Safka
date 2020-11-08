@@ -26,14 +26,23 @@ const RestaurantsList: FC<Props> = () => {
     coffeeImg,
     sushiImg
   ]
-  const max3Restaurants = restaurants?.slice(3, 6) || []
+  const maxRestaurants = restaurants?.slice(3, 100) || []
+  const getRandomImage = () => restaurantImages[Math.round(Math.random() * 2) ]
   return (
-    <Container style={{ marginTop: '20px', maxWidth: '600px' }}>
+    <Container style={{
+      padding: '5px',
+      marginTop: '20px',
+      maxWidth: '600px', 
+      minWidth: '75vw',
+      overflowY: 'auto',
+      overflowX: 'hidden',
+      maxHeight: '45vh'
+    }}>
       <Grid container direction='column' spacing={2}>
-          {max3Restaurants && max3Restaurants.map(({name, city}, index) => 
+          {maxRestaurants && maxRestaurants.map(({name, city}, index) => 
           <Grid item xs={12} key={`${name}+${index}`}>
             <RestaurantCard
-              {...{name, city, image: restaurantImages[index] }}
+              {...{name, city, image: getRandomImage() }}
             />
           </Grid>
             )

@@ -2,11 +2,8 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import { Container } from '../components/Primitives'
 import {
-  GreyMessage,
-  TextInput,
-  GreenButton,
+  GreyMessage
 } from '../components/StyledComponents'
 
 const Invite = () => {
@@ -25,7 +22,7 @@ const Invite = () => {
   const { group } = data
 
   return (
-    <Container>
+    <div>
       <h2>Invite your friends</h2>
       <Image fluid={group?.childImageSharp.fluid} style={{ width: '200px' }} />
 
@@ -47,13 +44,13 @@ const Invite = () => {
         </Left>
         <Right color="var(--green)">Share the link</Right>
       </ShareContainer>
-    </Container>
+    </div>
   )
 }
 
 export default Invite
 
-const Image = styled(Img)`
+const Image: any = styled(Img)`
   margin: 30px auto;
 `
 const Message = styled(GreyMessage)`

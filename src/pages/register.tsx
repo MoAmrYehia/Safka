@@ -24,9 +24,7 @@ const Register = () => {
   return (
     <Container style={{ marginTop: '5vh'}}>
       <h1>Register</h1>
-
       <GreyMessage>Create your profile!</GreyMessage>
-
       <Form>
         {inputs.map(({ label, placeholder, id }) => {
           return (

@@ -2,11 +2,17 @@ import { Card, CardMedia, createStyles, Grid, Paper, Typography, withStyles } fr
 import React from 'react'
 
 const restaurantCardStyles = () => createStyles({
+  cardPaper: {
+    borderRadius: '15px'
+  },
   restaurantCard: {
-    height: '100px'
+    height: '100px',
+    borderRadius: '15px'
   },
   foodImage: {
-    maxHeight: '100.5px'
+    height: '100px',
+    maxHeight: '110.5px',
+    objectFit: 'none'
   },
   nameGrid: {
     maxWidth: '90%',
@@ -25,8 +31,9 @@ const restaurantCardStyles = () => createStyles({
     fontStyle: 'normal',
     fontWeight: 'bolder',
     lineHeight: '30px',
-    fontSize: '0.76rem',
-    color: 'black'
+    fontSize: '0.72rem',
+    color: 'black',
+    whiteSpace: 'nowrap'
   },
   cityText: {
     fontFamily: 'Work Sans',
@@ -47,9 +54,9 @@ export interface RestaurantCardProps {
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ classes, name, city, image }) => {
   const capitalizedName = `${name[0].toUpperCase()}${name.slice(1, name.length)}`
-  const shortenedName = capitalizedName.length > 25 ? `${capitalizedName.slice(0, 25)}...` : capitalizedName
+  const shortenedName = capitalizedName.length > 20 ? `${capitalizedName.slice(0, 25)}...` : capitalizedName
   return (
-  <Paper elevation={6}>
+  <Paper elevation={6} className={classes.cardPaper}>
     <Card className={classes.restaurantCard}>
       <Grid container direction='row'>
         <Grid item xs={4}>
