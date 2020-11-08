@@ -1,4 +1,5 @@
 import { Button, Grid } from '@material-ui/core'
+import { navigate } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import CustomMuiLink from '../../plugins/gatsby-plugin-top-layout/CustomMuiLink'
@@ -37,7 +38,7 @@ const Register = () => {
         })}
       </Form>
       <Grid container justify='center'>
-        <GreenButton>Create Account</GreenButton>
+        <GreenButton onClick={() => navigate('/restaurants')}>Create Account</GreenButton>
       </Grid>
       <GreyMessage>
         Already have a profile?
