@@ -13,7 +13,7 @@ interface Props {
 
 const restaurantStyles = createStyles({
   mainContainer: { minWidth: '100vw'},
-  homeButtonIcon: { position: 'absolute', top: '15px', left: '10px', minWidth: '64px' },
+  homeButtonIcon: { position: 'absolute', top: '8px', left: '8px', minWidth: '64px' },
   dynamicListHeaderText: { marginTop: '25vh' },
   actionButtons: { marginTop: '15px' }
 })
