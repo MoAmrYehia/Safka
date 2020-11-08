@@ -17,7 +17,6 @@ const InviteDrawer = () => {
 
   return (
     <React.Fragment>
-
       <GreenButton onClick={() => setOpen(true)}>Share</GreenButton>
         <Drawer style={{ maxHeight: '80vh' }} anchor='bottom' open={isOpen} onClose={() => setOpen(false)}>
           <div className={classes.inviteDrawer}>

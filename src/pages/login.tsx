@@ -1,4 +1,5 @@
 import { Button, Grid, Container } from '@material-ui/core';
+import { navigate } from 'gatsby';
 import React from 'react'
 import styled from 'styled-components'
 import CustomMuiLink from '../../plugins/gatsby-plugin-top-layout/CustomMuiLink'
@@ -16,7 +17,7 @@ const Register = () => {
   ]
   return (
     <TopLayout> 
-      <Container style={{ marginTop: '25vh' }}>
+      <Container style={{ marginTop: '15vh' }}>
         <h1>Log in</h1>
 
         <GreyMessage>Please enter your details.</GreyMessage>
@@ -32,13 +33,8 @@ const Register = () => {
           })}
         </Form>
         <Grid container justify='center'>
-          <GreenButton>Login</GreenButton>
+          <GreenButton onClick={() => navigate('/restaurants')}>Login</GreenButton>
         </Grid>
-        <GreyMessage>
-          <Button color='secondary' component={CustomMuiLink} to="/login">
-              Sign in
-          </Button>
-        </GreyMessage>
         <GreyMessage>
           Don't have a profile?
             <Button color='secondary' component={CustomMuiLink} to="/register">

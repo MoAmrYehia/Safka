@@ -6,7 +6,8 @@ import { graphql, navigate, useStaticQuery } from 'gatsby';
 import GatsbyImage from 'gatsby-image'
 import InviteDrawer from '../components/InviteDrawer';
 import { WhiteButton } from '../components/StyledComponents';
-
+import FiltersDrawer from '../components/FiltersDrawer';
+import BottomAppBar from '../components/BottomAppBar';
 interface Props {
   classes?: any
 }
@@ -14,7 +15,7 @@ interface Props {
 const restaurantStyles = createStyles({
   mainContainer: { minWidth: '100vw'},
   homeButtonIcon: { position: 'absolute', top: '8px', left: '8px', minWidth: '64px' },
-  dynamicListHeaderText: { marginTop: '25vh' },
+  dynamicListHeaderText: { marginTop: '17vh' },
   actionButtons: { marginTop: '15px' }
 })
 
@@ -34,9 +35,16 @@ const Restaurants: FC<Props> = ({ classes }) => {
   return (
     <TopLayout>
       <Grid container direction='column' justify='center' alignItems='center' className={classes.mainContainer}>
-        <IconButton className={classes.homeButtonIcon} onClick={() => navigate('/')}>
-          <GatsbyImage fluid={logoButton?.childImageSharp.fluid} className={classes.homeButtonIcon}></GatsbyImage>
-        </IconButton>
+        <Grid container direction='row' justify='space-between'>
+          <Grid item>
+          <IconButton className={classes.homeButtonIcon} onClick={() => navigate('/')}>
+            <GatsbyImage fluid={logoButton?.childImageSharp.fluid} className={classes.homeButtonIcon}></GatsbyImage>
+          </IconButton>
+        </Grid>
+        <Grid item>
+          <FiltersDrawer />
+        </Grid>
+        </Grid>
           <Grid item className={classes.dynamicListHeaderText}>
             <Typography variant='h6' style={{ fontFamily: 'Mono Space'}}>Shared List</Typography>
           </Grid>
@@ -48,6 +56,7 @@ const Restaurants: FC<Props> = ({ classes }) => {
             {/* later separate "enter code" handling */}
             <InviteDrawer />
           </Grid>
+          <BottomAppBar />
       </Grid>
     </TopLayout>
   )

@@ -30,7 +30,7 @@ const Chat = () => {
   ]
 
   return (
-    <ChatContainer>
+    <ChatContainer style={{ padding: '0 10px'}}>
       {chatData.map(({ date, message, status, color, position }) => {
         return (
           <BubbleContainer>
@@ -106,5 +106,5 @@ const SendButton = styled.button`
   font-size: 16px;
 `
 const ChatContainer = styled(Container)`
-  margin-top: 100px;
+  margin-top: 0;
 `

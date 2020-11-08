@@ -33,14 +33,14 @@ const Invite = () => {
 
       <ShareContainer>
         <Left color="var(--pink)">
-          <input placeholder="Code" value="eatsafka" disabled />
+          <input placeholder="Code" value="GDSFKA" disabled />
         </Left>
         <Right color="var(--pink)">Share the code</Right>
       </ShareContainer>
 
       <ShareContainer>
         <Left color="var(--green)">
-          <input placeholder="Code" value="safka.fi/GDdffsDf" disabled />
+          <input placeholder="Code" value="safka.fi/GDSFKA" disabled />
         </Left>
         <Right color="var(--green)">Share the link</Right>
       </ShareContainer>

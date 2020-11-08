@@ -4,7 +4,7 @@ import { RestaurantMain } from '../types/restaurants'
 interface GetRestaurantsProps {
   setRestaurants: React.Dispatch<React.SetStateAction<RestaurantMain[]>>
   // add handling for filters
-  filters?: any 
+  filters?: any
 }
 
 const getAndUpdateRestaurants = ({
