@@ -6,6 +6,11 @@ import TopLayout from '../../plugins/gatsby-plugin-top-layout/TopLayout'
 // import Register from '../components/Register'
 import Layout from '../components/Layout'
 import Restaurants from '../components/restaurants/Restaurants'
+// import LandingPage from '../components/LandingPage'
+// import Register from '../components/Register'
+// import Login from '../components/Login'
+// import Invite from '../components/Invite'
+import Chat from '../components/Chat'
 
 const Index = () => {
   return (
@@ -15,6 +20,10 @@ const Index = () => {
         {/* <LandingPage /> */}
         {/* <Register /> */}
         <Restaurants />
+        {/* <Login /> */}
+        {/* <Invite /> */}
+
+        <Chat />
       </>
       </Layout>
     </TopLayout>

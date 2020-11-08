@@ -2,10 +2,13 @@
   --white: #fff;
   --black: #000000;
   --grey: #9b9b9b;
+  --lightGrey: rgba(155, 155, 155, 0.3);
   --primaryText: #2c2b2b;
   --secondaryText: var(--grey);
   --green: #66cc66;
+  --lightGreen: rgba(102, 204, 102, 0.3);
   --pink: #ffa9d3;
+  --svg: #d2d2d2;
 
   /* styling */
   --padding: 15px;
