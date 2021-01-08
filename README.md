@@ -17,11 +17,12 @@
     The only difference to the Gatsby starter pack is the .env.development file (check the example).
 
     Steps:
-    - clone repo
-    - open terminal in folder
-    - npm i
-    - gatsby develop
-    
+    > - clone repo
+    > - open terminal in folder
+    ```
+    npm i
+    gatsby develop
+    ```
     The app should now be running at `http://localhost:8000`!
 
 3.  **Features (some mock)**
