@@ -6,24 +6,21 @@
 
 ## AITO.AI Junction challenge solution proposal
 
-    The main goal of the application is to provide a quick way to
-    decide where to eat together with friends, family or co-workers.
+* The main goal of the application is to provide a quick way todecide where to eat together with friends, family or co-workers.
 
-    The main restaurant list pulls data and it can become predictive,
-    other users who join your Safka session can apply filters to the shared list.
+* The main restaurant list pulls data and it can become predictive, other users who join your Safka session can apply filters to the shared list.
 
 ## Setup
 
-    The only difference to the Gatsby starter pack is the .env.development file (check the example).
-
-    Steps:
-    > - clone repo
-    > - open terminal in folder
-    ```
-    npm i
-    gatsby develop
-    ```
-    The app should now be running at `http://localhost:8000`!
+The only difference to the Gatsby starter pack is the .env.development file (check the example).
+Steps:
+> - clone repo
+> - open terminal in folder
+```
+npm i
+gatsby develop
+```
+The app should now be running at `http://localhost:8000`!
 
 ## Features (some mock)
 
