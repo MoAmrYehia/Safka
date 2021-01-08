@@ -1,4 +1,8 @@
-## Introduction
+## Safka
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/MoAmrYehia/Safka/main/static/assets/hero_image.png">
+</p>
 
 1.  **AITO.AI Junction challenge solution proposal**
 
