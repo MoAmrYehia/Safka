@@ -1,10 +1,10 @@
-## Safka
+# Safka
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/MoAmrYehia/Safka/main/static/assets/hero_image.png">
 </p>
 
-1.  **AITO.AI Junction challenge solution proposal**
+## AITO.AI Junction challenge solution proposal
 
     The main goal of the application is to provide a quick way to
     decide where to eat together with friends, family or co-workers.
@@ -12,7 +12,7 @@
     The main restaurant list pulls data and it can become predictive,
     other users who join your Safka session can apply filters to the shared list.
 
-2.  **Setup**
+## Setup
 
     The only difference to the Gatsby starter pack is the .env.development file (check the example).
 
@@ -25,7 +25,7 @@
     ```
     The app should now be running at `http://localhost:8000`!
 
-3.  **Features (some mock)**
+## Features (some mock)
 
     - simple (unfiltered) search to your own aito instance API
     - no account needed to start a group session
@@ -34,7 +34,7 @@
     - room chat
     - basic app pipeline/design etc
 
-4. **Tech stack**
+## Tech stack
     
     - gatsby
     - react
@@ -42,7 +42,7 @@
     - different data handlers/helpers (axios, graphql etc)
     - aito.ai used as an API/backend
 
-5.  **Missing, next up**
+## Missing, next up
 
     Most of the functionality is mock, there is a built in handler for an aito.ai API search
 
